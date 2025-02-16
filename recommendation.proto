@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package proto;
+
+service RecommendationService {
+  rpc GetRecommendations(RecommendationRequest) returns (RecommendationResponse);
+}
+
+message RecommendationRequest {
+  int32 user_id = 1;
+}
+
+message Recommendation {
+  int32 class_category_id = 1;
+  string consultancy_link = 2;
+  string consultancy_schedule = 3;
+  string created_at = 4;
+  string deleted_at = 5;
+  string description = 6;
+  string group_chat_link = 7;
+  int32 id = 8;
+  string image = 9;
+  int32 instructor_id = 10;
+  bool is_deleted = 11;
+  string learning_link = 12;
+  string level = 13;
+  string materials = 14;
+  string media = 15;
+  string meta_description = 16;
+  string method = 17;
+  string name = 18;
+  string prefix_code = 19;
+  double price = 20;
+  string registration_close_date = 21;
+  double score = 22;
+  string slug = 23;
+  repeated string tags = 24;
+  string thumbnail = 25;
+  string updated_at = 26;
+  string collaboration_feed = 27;
+}
+
+message RecommendationResponse {
+  repeated Recommendation recommendations = 1;
+}

@@ -1,0 +1,11 @@
+id,name,age,occupation,interests
+1,Anna Garcia,18,Researcher,"['Web Development', 'Mobile Development']"
+2,John Jones,21,Scientist,"['Machine Learning', 'Data Analysis']"
+3,Emily Smith,59,Teacher,"['Programming', 'AI', 'Machine Learning']"
+4,Jane Johnson,41,Marketing Specialist,"['Data Analysis', 'Machine Learning', 'Web Development']"
+5,Robert Jones,58,Data Analyst,"['Python', 'Programming', 'AI']"
+6,Robert Williams,51,Student,"['Mobile Development', 'Python', 'Data Analysis', 'Graphic Design']"
+7,Chris Williams,60,Student,"['UI/UX', 'Programming']"
+8,Laura Wilson,32,Marketing Specialist,"['Marketing', 'Mobile Development']"
+9,John Davis,32,Designer,"['UI/UX', 'Web Development']"
+10,Michael Smith,56,Software Developer,"['UI/UX', 'Mobile Development', 'Python', 'Web Development']"

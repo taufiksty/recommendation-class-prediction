@@ -1,0 +1,11 @@
+id,title,category,tags,level
+1,Intro to Python,Programming,"['Python', 'Machine Learning', 'Data Science']",Beginner
+2,Advanced Machine Learning,AI,"['Machine Learning', 'Data Science']",Intermediate
+3,UI/UX Design Basic,UI/UX,"['UI/UX', 'Graphic Design']",Beginner
+4,Data Science Fundamental,Data Science,['Data Science'],Beginner
+5,Python for Advanced,Programming,"['Python', 'Machine Learning']",Beginner
+6,Intro to Machine Learning,Machine Learning,['Machine Learning'],Intermediate
+7,Marketing Specialist 101,Marketing,['Marketing'],Beginner
+8,Full Stack Web Development,Web Development,['Web Development'],Beginner
+9,Android Mobile Development,Mobile Development,['Mobile Development'],Intermediate
+10,Data Analytics: From A to Z,Data Analysis,['Data Analysis'],Beginner
