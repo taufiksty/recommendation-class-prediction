@@ -18,11 +18,16 @@ def load_data_from_db():
         "SELECT user_id, class_id, rating FROM users_classes", con=engine
     )
 
-    def parse_interests_or_tags(interest_or_tags_str):
+    def parse_interests_or_tags(interest_or_tags):
         try:
-            return interest_or_tags_str.strip("{}").replace('"', "").lower().split(",")
+            if isinstance(interest_or_tags, list):  
+                return [item.lower() for item in interest_or_tags]
+            elif isinstance(interest_or_tags, str):  
+                return interest_or_tags.strip("{}").replace('"', "").lower().split(",")
+            else:  
+                return []
         except Exception as e:
-            print(f"Failed to parse interests: {interest_or_tags_str}, error: {e}")
+            print(f"Failed to parse interests: {interest_or_tags}, error: {e}")
             return []
 
     users["interests"] = users["interests"].apply(parse_interests_or_tags)

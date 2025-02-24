@@ -11,6 +11,7 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 columns = [
+    "id",
     "name",
     "image",
     "thumbnail",
