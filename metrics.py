@@ -1,5 +1,8 @@
-from main_v2 import users_classes, users, classes, hybrid_recommendation
+from main_v3 import hybrid_recommendation
 import pandas as pd
+from database import load_data_from_db
+
+users, classes, users_classes = load_data_from_db()
 
 
 def calculate_diversity(recommendations):
@@ -45,7 +48,7 @@ def calculate_coverage(recommendations, total_classes):
 def evaluate_recommendations(user_id, top_n=3):
     # Get recommendations for the user
     recommendations = hybrid_recommendation(
-        user_id, content_weight=0.9, collab_weight=0.1, for_metrics=True
+        user_id, content_weight=0.7, collab_weight=0.3, for_metrics=True
     )
     recommendations_top3 = recommendations.head(top_n)
 
@@ -71,7 +74,7 @@ def evaluate_recommendations(user_id, top_n=3):
 
 
 # Example Usage for Multiple Users
-user_ids = users["id"].tolist()[13:23]  # Evaluate for first 10 users
+user_ids = users["id"].tolist()[24:34]  # Evaluate for first 10 users
 results = []
 
 

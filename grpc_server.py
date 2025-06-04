@@ -1,6 +1,5 @@
 from concurrent import futures
 import grpc
-import pandas as pd
 from recommendation_pb2 import Recommendation, RecommendationResponse
 from recommendation_pb2_grpc import (
     RecommendationServiceServicer,
@@ -16,7 +15,7 @@ class RecommendationService(RecommendationServiceServicer):
             user_id=user_id,
             content_weight=0.9,
             collab_weight=0.1,
-            top_n=5,
+            top_n=3,
         )
 
         recommendations = [
